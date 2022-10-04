@@ -71,6 +71,10 @@ img {
   max-width: 100%;
 }
 
+input {
+  overflow: auto;
+}
+
 /* utilities */
 
 .no-margin {
@@ -185,6 +189,11 @@ img {
   text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 2rem;
+  border: none;
+}
+
+.button:hover {
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -318,3 +327,68 @@ img {
   max-height: 70rem;
   
 } */
+
+/* contact styles */
+
+.contact-bg {
+  background-image: url("https://i.imgur.com/vwJ0kiu.jpg");
+  height: 40rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.form {
+  background-color: var(--white);
+  margin: -19rem auto 0 auto;
+  width: 95%;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.field {
+  /* display: flex; */
+  /* margin-bottom: 2rem; */
+  gap: 2rem;
+}
+
+.field__input {
+  /* flex: 1; */
+  width: 100%;
+  border: 1px solid var(--soft-grey);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.field__input::placeholder {
+  color: rgb(201, 201, 201);
+}
+
+/* .form {
+  background-color: var(--white);
+  margin: -5rem auto 0 auto;
+  width: 95%;
+  padding: 5rem;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+} */
+
+/* .field {
+  display: flex;
+  margin-bottom: 2rem;
+  gap: 2rem;
+} */
+
+/* .field__label {
+  flex: 0 0 9rem;
+  text-align: right;
+} */
+
+/* .field__input {
+  flex: 1;
+  border: 1px solid var(--soft-grey);
+} */
+
+.field__input--textarea {
+  height: 20rem;
+}
