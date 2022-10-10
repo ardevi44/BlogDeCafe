@@ -94,9 +94,19 @@ input {
 }
 
 /* header styles */
+
+/*if the browser supports webp images format applies the .webp image*/
+.webp .header {
+  background-image: url("../img/banner-coffee-w.webp");
+}
+
+/*else we get the image from imgur*/
+.no-webp .header {
+  background-image: url("https://i.imgur.com/336AKfi.jpg");
+}
+
 .header {
   height: 60rem;
-  background-image: url("https://i.imgur.com/336AKfi.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   /* background-position: right center; */
